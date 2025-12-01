@@ -105,19 +105,84 @@ yarn start
 
 ```text
 adv-api-tester/
+├── .gitignore
+├── README.md
 ├── backend/
-│   ├── server.py           # FastAPI proxy server
-│   ├── requirements.txt    # Python dependencies
-│   └── .env                # Backend environment variables
-├── frontend/
-│   ├── src/
-│   │   ├── components/     # React components (RequestPanel, ResponsePanel, etc.)
-│   │   ├── lib/            # Utilities and helpers
-│   │   ├── App.js          # Main application entry
-│   │   └── index.css       # Tailwind and global styles
-│   ├── public/             # Static assets
-│   └── package.json        # Frontend dependencies
-└── README.md
+│   ├── requirements.txt
+│   └── server.py
+└── frontend/
+    ├── package.json
+    ├── yarn.lock
+    ├── tailwind.config.js
+    ├── postcss.config.js
+    ├── craco.config.js
+    ├── jsconfig.json
+    ├── components.json
+    ├── public/
+    │   └── index.html
+    └── src/
+        ├── index.js
+        ├── index.css
+        ├── App.js
+        ├── App.css
+        ├── lib/
+        │   └── utils.js
+        ├── hooks/
+        │   └── use-toast.js
+        └── components/
+            ├── ApiTester.jsx
+            ├── HistoryDrawer.jsx
+            ├── KeyValueEditor.jsx
+            ├── RequestPanel.jsx
+            ├── ResponsePanel.jsx
+            ├── SaveDialog.jsx
+            └── ui/
+                ├── accordion.jsx
+                ├── alert.jsx
+                ├── alert-dialog.jsx
+                ├── aspect-ratio.jsx
+                ├── avatar.jsx
+                ├── badge.jsx
+                ├── breadcrumb.jsx
+                ├── button.jsx
+                ├── calendar.jsx
+                ├── card.jsx
+                ├── carousel.jsx
+                ├── checkbox.jsx
+                ├── collapsible.jsx
+                ├── command.jsx
+                ├── context-menu.jsx
+                ├── dialog.jsx
+                ├── drawer.jsx
+                ├── dropdown-menu.jsx
+                ├── form.jsx
+                ├── hover-card.jsx
+                ├── input.jsx
+                ├── input-otp.jsx
+                ├── label.jsx
+                ├── menubar.jsx
+                ├── navigation-menu.jsx
+                ├── pagination.jsx
+                ├── popover.jsx
+                ├── progress.jsx
+                ├── radio-group.jsx
+                ├── resizable.jsx
+                ├── scroll-area.jsx
+                ├── select.jsx
+                ├── separator.jsx
+                ├── sheet.jsx
+                ├── skeleton.jsx
+                ├── slider.jsx
+                ├── sonner.jsx
+                ├── switch.jsx
+                ├── table.jsx
+                ├── tabs.jsx
+                ├── textarea.jsx
+                ├── toast.jsx
+                ├── toaster.jsx
+                ├── toggle.jsx
+                ├── toggle-group.jsx
+                └── tooltip.jsx
 ```
 
 ## Usage
