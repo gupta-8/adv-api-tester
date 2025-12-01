@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Base - Dark Tech Theme */
+    --background: 222 47% 11%;     /* #0f172a - Slate 900 */
+    --foreground: 210 40% 98%;     /* #f8fafc - Slate 50 */
+
+    /* Card / Surfaces - Glassy feel handled in components, but base surface here */
+    --card: 222 47% 13%;           /* Slightly lighter than bg */
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222 47% 11%;
+    --popover-foreground: 210 40% 98%;
+
+    /* Primary - Neon Cyan */
+    --primary: 190 100% 50%;       /* #00f0ff - Cyberpunk Cyan */
+    --primary-foreground: 222 47% 11%;
+
+    /* Secondary - Muted Purple/Blue */
+    --secondary: 217 33% 20%;
+    --secondary-foreground: 210 40% 98%;
+
+    /* Muted - Subtler background elements */
+    --muted: 217 33% 18%;
+    --muted-foreground: 215 20% 65%;
+
+    /* Accent - Hot Pink */
+    --accent: 327 100% 55%;        /* #ff1a8c - Neon Pink */
+    --accent-foreground: 210 40% 98%;
+
+    /* Destructive - Bright Red */
+    --destructive: 0 100% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    /* Borders & Inputs */
+    --border: 217 33% 20%;
+    --input: 217 33% 20%;
+    --ring: 190 100% 50%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222 47% 11%;
+    --foreground: 210 40% 98%;
+    --card: 222 47% 13%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222 47% 11%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 190 100% 50%;
+    --primary-foreground: 222 47% 11%;
+    --secondary: 217 33% 20%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217 33% 18%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 327 100% 55%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 100% 60%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217 33% 20%;
+    --input: 217 33% 20%;
+    --ring: 190 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    /* Subtle grid pattern for tech feel */
+    background-image: 
+      linear-gradient(to right, rgba(255,255,255,0.03) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255,255,255,0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: hsl(var(--background));
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--muted-foreground) / 0.3);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--muted-foreground) / 0.5);
+}
+
+/* Glassmorphism Utilities */
+.glass {
+  @apply bg-background/60 backdrop-blur-md border border-white/10 shadow-xl;
+}
+
+.glass-card {
+  @apply bg-card/40 backdrop-blur-sm border border-white/5 shadow-lg transition-all duration-300 hover:bg-card/50 hover:border-primary/20;
+}
+
+.neon-text {
+  text-shadow: 0 0 10px hsla(var(--primary) / 0.5);
+}
+
+.neon-border {
+  box-shadow: 0 0 10px hsla(var(--primary) / 0.2);
+}
