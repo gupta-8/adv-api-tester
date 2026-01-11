@@ -58,7 +58,9 @@
   "scripts": {
     "start": "craco start",
     "build": "craco build",
-    "test": "craco test"
+    "test": "craco test",
+    "format": "prettier --write \"src/**/*.{js,jsx,css,json,md}\"",
+    "format:check": "prettier --check \"src/**/*.{js,jsx,css,json,md}\""
   },
   "browserslist": {
     "production": [
@@ -84,6 +86,7 @@
     "eslint-plugin-react-hooks": "5.2.0",
     "globals": "15.15.0",
     "postcss": "^8.4.49",
-    "tailwindcss": "^3.4.17"
+    "tailwindcss": "^3.4.17",
+    "prettier": "^3.3.3"
   }
 }
