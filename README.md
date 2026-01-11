@@ -1,4 +1,6 @@
-<img width="1917" height="911" alt="image" src="https://github.com/user-attachments/assets/618a5d0a-cc9d-462d-a080-bf8a3d63866f" /># Adv. API Tester
+<img width="1917" height="911" alt="image" src="https://github.com/user-attachments/assets/618a5d0a-cc9d-462d-a080-bf8a3d63866f" />
+
+# Adv. API Tester
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
